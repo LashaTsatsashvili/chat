@@ -1,11 +1,11 @@
-FROM node:9-slim
+FROM node:latest
 
 WORKDIR /app
 
-COPY package.json /app
-COPY package-lock.json /app
+#COPY package.json /usr/app
+#COPY package-lock.json /usr/app
 RUN npm install
 
-COPY . /app
+#COPY . /usr/app
 
-CMD [ "npm", "run", "dev" ]
+ENTRYPOINT npm run dev

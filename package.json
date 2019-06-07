@@ -7,7 +7,7 @@
     "build-ts": "tsc",
     "start": "npm run serve",
     "serve": "node dist/server.js",
-    "dev": "nodemon src/server.ts",
+    "dev": "nodemon",
     "watch-node": "nodemon dist/server.js",
     "watch-ts": "tsc -w"
   },
@@ -26,6 +26,7 @@
     "@types/express": "^4.17.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
-    "ts-node": "^8.2.0"
+    "ts-node": "^8.2.0",
+    "tsconfig-paths": "^3.8.0"
   }
 }
