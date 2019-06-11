@@ -9,5 +9,5 @@ app.use('/chat', chatRouter.chatRouter);
 const socketIo = socket(server);
 
 socketIo.on('connection', () => {
-    socketIo.emit('message', 'test');
+    socketIo.emit('message', 'test12');
 });
